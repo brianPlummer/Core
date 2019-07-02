@@ -13,7 +13,7 @@ A Store is a class that simplifies fetching, parsing, storage, and retrieval of 
 
 Store provides a level of abstraction between UI elements and data operations.
 
-## Overview
+# Overview
 
 A Store is responsible for managing a particular data request. When you create an implementation of a Store, you provide it with a `Fetcher`, a function that defines how data will be fetched over network. You can also define how your Store will cache data in-memory and on-disk, as well as how to parse it. Since Store returns your data as an `Observable`, threading is a breeze! Once a Store is built, it handles the logic around data flow, allowing your views to use the best data source and ensuring that the newest data is always available for later offline use. Stores can be customized to work with your own implementations or use our included middleware.
 
